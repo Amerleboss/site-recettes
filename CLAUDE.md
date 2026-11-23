@@ -10,6 +10,7 @@ Site de recettes québécoises par saison (Noël, temps des sucres, Pâques, Fê
 - `src/data/01-noel.js` : déclare `colors`, `data` (tableau `[nom, catégorie, temps, niveau, enfants, saison]`) et `full` (recettes complètes de Noël).
 - `src/data/02-more.js` … : ajoutent des recettes à `full`. `03-seasons.js` définit `SEASONS` et ajoute les recettes des autres saisons avec `R(...)`. `04`–`06` réécrivent les étapes détaillées avec `S(nom, [étapes])`.
 - `src/art.js` : dessins SVG de chaque plat (`ART(nom)`). Toute nouvelle recette doit avoir une entrée dans la table `m` (sinon elle s'affiche sans dessin).
+- Fonctions de la page : planificateur « Préparer le réveillon » (6/8/12 personnes), ajustement des portions (`scaleLine`, ne touche pas aux %, °, cm, po ni au format des boîtes), favoris, liste d'épicerie (copier, imprimer), filtres durée/niveau/enfants, lien Santé Canada. Favoris, liste et langue sont gardés dans le navigateur seulement si la personne accepte les cookies.
 - Traductions de l'interface : objet `I18N`, `CAT_EN`, `SEASON_EN` dans `src/template.html`. Le contenu des recettes est en français seulement pour l'instant.
 
 ## Règles pour ajouter ou modifier une recette
